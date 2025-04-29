@@ -1,0 +1,168 @@
+/* Portfolio Page Styling */
+body.portfolio {
+    background-color: #121212;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Portfolio Hero Section */
+.portfolio-hero {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+}
+
+.portfolio-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Projects Section */
+.projects {
+    background-color: #1f1f1f;
+    padding: 60px 0;
+}
+
+.projects .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #121212;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #ff6347;
+    object-fit: cover;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-details {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.project-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+
+.project-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.view-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+    background-color: #ff4500;
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .projects .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-details p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects .container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-details h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-details p {
+        font-size: 0.9rem;
+    }
+}

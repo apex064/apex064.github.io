@@ -1,0 +1,181 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    line-height: 1.6;
+    background-color: #121212;
+}
+
+/* About Page Styling */
+body.about {
+    background-color: #121212;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* About Hero Section */
+.about-hero {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+}
+
+.about-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Bio Section */
+.bio {
+    background-color: #1f1f1f;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.bio .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bio h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+.bio p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f0f0f0;
+}
+
+.bio-img {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bio-img img {
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Section */
+.skills {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #121212;
+}
+
+.skills h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+.skills ul {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bio-content, .skills-content {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .about-hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+    }
+
+    .bio-img img {
+        max-width: 150px;
+    }
+
+    .skills ul {
+        font-size: 1rem;
+    }
+}
